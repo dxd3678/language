@@ -48,7 +48,9 @@ print("国家：", country["name"])
 # 2. 获取浙江省信息
 print("\n浙江省省会：", country["provinces"]["zhejiang"]["capital"])
 
-# 3. 获取山西省的所有城市
+# 3. 获取山西省的所有城市，通过 for 循环来变量 list
+
+
 print("\n山西省的城市：")
 for city in country["provinces"]["shanxi"]["cities"]:
     print(f"  - {city['name']} ({city['type']})")
